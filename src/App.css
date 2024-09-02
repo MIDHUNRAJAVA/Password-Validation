@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.bg-container {
+  display: flex;               
+  justify-content: center;     
+  align-items: center;       
+
+  height: 100vh;               /* Full viewport height */
+  width: 100vw;                /* Full viewport width */
+
+
+  background-size: cover;      /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;/* Don't repeat the background image */
+ 
+}
+
+.container
+{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width:50%;
+  height:70%;
+  background-color: #e0a0a0;
+  border: 5px solid black;
+  border-radius: 25px;
+}
+
+
+.input-div{
+  display: flex; 
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+
+  width: 50%;
+  height: 40%;
+  background-color: rgb(210, 248, 153);
+  font: bold 20px arial;
+
+}
+
+
+input{
+  width: 60%;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  font: bold 20px arial;
+} 
+
+
+.submit{
+  background-color: lightgreen;
+  padding: 10px;
+  border: none;
+  width: 100px;
+  border-radius: 15px;
+  font: bold 20px arial;
+}
+
+.warning
+{
+  /* background-color: black; */
+  font: 10px arial;
+
+  color:red;
+}
+
