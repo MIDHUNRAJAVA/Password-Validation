@@ -1,78 +1,102 @@
-*{
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
-
-.bg-container {
-  display: flex;               
-  justify-content: center;     
-  align-items: center;       
-
-  height: 100vh;               /* Full viewport height */
-  width: 100vw;                /* Full viewport width */
-
-
-  background-size: cover;      /* Cover the entire container */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat;/* Don't repeat the background image */
- 
+.main-container {
+  display: flex;
+  height: 100vh;
 }
 
-.container
-{
-  
+.form-container {
+  flex: 1;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-
-  width:50%;
-  height:70%;
-  background-color: #e0a0a0;
-  border: 5px solid black;
-  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   padding: 20%;
 }
 
-
-.input-div{
-  display: flex; 
-  flex-direction: column;
-  justify-content:space-evenly;
-  align-items: center;
-
-  width: 50%;
-  height: 40%;
-  background-color: rgb(210, 248, 153);
-  font: bold 20px arial;
-
+.heading h1 {
+  /* margin: 0 0 20px 0; */
+  margin-bottom: 100px;
+  margin-top: -100px;
+  font-size: 24px;
+  color: #007BFF;
 }
 
+.input-div {
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+}
 
-input{
-  width: 60%;
-  padding: 15px;
-  border-radius: 15px;
-  border: none;
-  font: bold 20px arial;
-} 
+.input-username, .input-email, .input-password {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.input-username:focus,.input-email:focus, .input-password:focus {
+  border-color: #007BFF;
+  outline: none;
+}
 
+.warning {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ffcccb;
+  background-color: #ffecec;
+  border-radius: 5px;
+  color: #d9534f;
+}
 
-.submit{
-  background-color: lightgreen;
+.warning ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.submit {
+  width: 100%;
+  max-width: 300px;
+  background-color: #4CAF50;
+  color: #fff;
   padding: 10px;
   border: none;
-  width: 100px;
-  border-radius: 15px;
-  font: bold 20px arial;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.warning
-{
-  /* background-color: black; */
-  font: 10px arial;
-
-  color:red;
+.submit:hover {
+  background-color: #45a049;
 }
 
+.image-container {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image {
+  background-image: url('./assets/plant.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
